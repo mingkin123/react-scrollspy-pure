@@ -1,6 +1,6 @@
 {
   "name": "react-scrollspy-pure",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react component provides the scrollspy feature with Intersection Observer API",
   "author": "mingkin123",
   "license": "MIT",

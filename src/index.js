@@ -46,8 +46,6 @@ export default function ScrollSpy(props) {
         if (activeClassTo === 'parent') {
           navItem = navItem.parentElement;
         }
-        console.log('navItemSelectorHandler(id)', navItemSelectorHandler(id), navItem, entry.intersectionRatio);
-
         if (entry.intersectionRatio > intersectionRatio) {
           navItem.classList.add(activeClassName);
         } else {
@@ -75,7 +73,7 @@ export default function ScrollSpy(props) {
 ScrollSpy.propTypes = {
   children: PropTypes.node,
   WrapperComponent: PropTypes.node,
-  sectionElementName: PropTypes.node,
+  sectionElementName: PropTypes.string,
   activeClassName: PropTypes.string,
   activeClassTo: PropTypes.oneOf(['self', 'parent']),
   navSelector: PropTypes.node,
